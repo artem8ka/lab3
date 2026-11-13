@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["catalog", "catalog.*"]
+
+[project]
+name = "lab3"
+version = "0.1.0"
+description = "Lab3 catalog"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=8.4.2",
+    "typer",
+    "ruff",
+    "pydantic",
+]
